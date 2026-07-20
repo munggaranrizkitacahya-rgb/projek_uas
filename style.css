@@ -75,6 +75,27 @@ a { color: var(--color-primary); }
   color: var(--color-primary);
 }
 
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+
 
 
 /* ---------------- GALERI FOTO — CSS GRID MURNI ---------------- */
