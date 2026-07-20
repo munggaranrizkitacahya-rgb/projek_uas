@@ -95,6 +95,24 @@ a { color: var(--color-primary); }
   border-color: var(--color-primary);
 }
 
+.menu-card .card {
+  border: none;
+  border-radius: var(--radius-base);
+  overflow: hidden;
+  background-color: var(--color-white);
+  transition: transform var(--transition-base),
+              box-shadow var(--transition-base);
+}
+
+.menu-card .card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.menu-card .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(74,44,29,.15);
+}
 
 
 
