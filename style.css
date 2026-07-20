@@ -1,0 +1,153 @@
+/* ==========================================================================
+   MARANGGI NUSANTARA — style.css
+   ========================================================================== */
+
+:root {
+  --color-brown-dark: #4A2C1D;
+  --color-brown: #7A4A2B;
+ --color-primary: #B65A2A;
+  --color-primary-hover: #93451D;
+  --color-cream: #ffefe0;
+  --color-cream-dark: #F0DFC0;
+  --color-white: #FFFFFF;
+
+  --font-heading: poppins, sans-serif;
+  --font-body: lora, serif;
+
+  --radius-base: 12px;
+  --transition-base: 0.3s ease;
+}
+
+body.dark-mode {
+  --color-cream: #2B2118;
+  --color-cream-dark: #201811;
+  --color-white: #3A2C1F;
+  --color-brown-dark: #F2DFC5;
+  --color-brown: #D8B48C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-brown-dark);
+  background-color: var(--color-cream);
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--color-brown-dark);
+  font-weight: 700;
+}
+
+h1 { font-size: clamp(1.8rem, 4vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 1rem; }
+
+a { color: var(--color-primary); }
+
+
+
+/* ---------------- GALERI FOTO — CSS GRID MURNI ---------------- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 180px;
+  gap: 12px;
+}
+
+.gallery-grid img:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform var(--transition-base);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* ---------------- TESTIMONI ---------------- */
+.testimoni-card {
+  border: none;
+  border-radius: var(--radius-base);
+  background-color: var(--color-white);
+  margin-top: 1.5rem;
+}
+
+/* ---------------- SECTION BACKGROUND VARIATION ---------------- */
+#tentang, #testimoni {
+  background-color: var(--color-cream-dark);
+  height: 98vh;
+}
+
+#tentang img{
+    width: 500px;
+    max-width: 100%;
+    height: 70vh;
+}
+
+#tentang p{
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    position: relative;
+    text-align: justify;
+}
+
+#tentang {
+    background-color: var(--color-cream-dark);
+    min-height: 90vh; /* atau 100vh */
+    display: flex;
+    align-items: center;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background-color: var(--color-brown-dark);
+  color: var(--color-cream);
+}
+
+footer a {
+  color: var(--color-cream);
+  font-size: 1.3rem;
+}
+
+footer a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  #heroCarousel .carousel-item img {
+    height: 55vh;
+    min-height: 320px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 140px;
+  }
+
+  .gallery-grid img:first-child {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 576px) {
+  #heroCarousel .carousel-caption p.lead {
+    font-size: 1 rem;
+  }
+}

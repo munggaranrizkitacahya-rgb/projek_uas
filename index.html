@@ -1,0 +1,473 @@
+HTML
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sate Maranggi Odiri</title>
+  <meta name="description" content="Katalog digital dan profil UMKM Sate Maranggi Purwakarta">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#beranda">Odiri</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Katalog Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="beranda">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://img.herstory.co.id/articles/archive_20221228/resep-masakan-20221228-114216.jpg" class="d-block w-100" alt="Sate maranggi dibakar di atas bara">
+            <div class="carousel-caption">
+              <h1>Sate Maranggi Odiri</h1>
+              <p class="lead">Rasa Asli Turun-Temurun, Dibakar dengan Bara Arang Pilihan</p>
+              <a href="#menu" class="btn btn-primary btn-lg">Lihat Menu</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.pinimg.com/1200x/15/2b/96/152b96144b65ed165a7f6b242e7c8462.jpg" class="d-block w-100" alt="Sate maranggi siap saji lengkap dengan sambal">
+            <div class="carousel-caption">
+              <h1>Nikmat Tiada Duanya</h1>
+              <p class="lead">Disajikan hangat dengan sambal tomat dan ketan bakar</p>
+              <a href="#tentang" class="btn btn-primary btn-lg">Tentang Kami</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.indonesia.travel/contentassets/2702b77b04834aeea335482bfce3ed6d/sate-maranggi.jpeg" class="d-block w-100" alt="Suasana warung sate maranggi">
+            <div class="carousel-caption">
+              <h1>Buka Setiap Hari, Siap Melayani</h1>
+              <p class="lead">Datang langsung atau pesan untuk acara keluarga Anda</p>
+              <a href="#kontak" class="btn btn-primary btn-lg">Hubungi Kami</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sebelumnya</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Berikutnya</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="tentang" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            
+            <!-- Teks -->
+            <div class="col-lg-6">
+                <h1>Tentang Kami</h1>
+                <p class="lead">
+                    Selamat datang di <strong> Sate Maranggi Odiri</strong>, tempat menikmati
+                    cita rasa autentik Sate Maranggi khas Purwakarta.
+                </p>
+
+                <p>
+                    Kami menggunakan daging pilihan yang dimarinasi dengan rempah-rempah
+                    tradisional, kemudian dipanggang di atas bara api untuk menghasilkan
+                    aroma khas dan rasa yang kaya. Dengan pengalaman bertahun-tahun, kami berkomitmen untuk menyajikan
+                    hidangan yang tidak hanya lezat tetapi juga menghadirkan pengalaman
+                    kuliner yang tak terlupakan bagi setiap pelanggan.
+            </div>
+
+            <!-- Gambar -->
+            <div class="col-lg-6 text-center">
+                <img src="https://i.pinimg.com/736x/ad/e7/8c/ade78cff05e02379ed3095de0249ad4a.jpg"
+                     class="img-fluid rounded-4 shadow"
+                     alt="Tentang Kami">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="menu" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Katalog Menu</h2>
+
+        <div class="filter-buttons text-center mb-4" id="filterButtons">
+          <button class="btn filter-btn active" data-filter="all">Semua</button>
+          <button class="btn filter-btn" data-filter="sapi">Daging Sapi</button>
+          <button class="btn filter-btn" data-filter="kambing">Daging Kambing</button>
+          <button class="btn filter-btn" data-filter="paket">Paket Keluarga</button>
+          <button class="btn filter-btn" data-filter="minuman">Minuman</button>
+        </div>
+
+        <div class="row g-4" id="menuContainer">
+
+          <div class="col-md-4 menu-card" data-category="sapi">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/ff/a5/0a/ffa50a19c44964ddba7085c3d0a37082.jpg" class="card-img-top" alt="Sate Maranggi Daging Sapi">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Sate Maranggi Daging Sapi</h5>
+                <p class="card-text">10 tusuk sate sapi pilihan dengan bumbu khas.</p>
+                <p class="fw-bold mt-auto">Rp 35.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Sate Maranggi Daging Sapi"
+                        data-menu-price="Rp 35.000"
+                        data-menu-desc="10 tusuk sate sapi pilihan dengan bumbu khas, disajikan dengan sambal tomat dan ketan bakar.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 menu-card" data-category="kambing">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/67/63/0a/67630a24290f58e58dc4536bf5ea3bfc.jpg" class="card-img-top" alt="Sate Maranggi Daging Kambing">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Sate Maranggi Daging Kambing</h5>
+                <p class="card-text">10 tusuk sate kambing muda, empuk dan tidak prengus.</p>
+                <p class="fw-bold mt-auto">Rp 40.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Sate Maranggi Daging Kambing"
+                        data-menu-price="Rp 40.000"
+                        data-menu-desc="10 tusuk sate kambing muda pilihan, dimarinasi semalaman agar empuk dan tidak berbau prengus.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 menu-card" data-category="paket">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/1200x/95/a9/53/95a953c990a2aae3763c5fd09698b27d.jpg" class="card-img-top" alt="Paket Keluarga Sate Maranggi">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Paket Keluarga (4 Porsi)</h5>
+                <p class="card-text">Campuran sapi & kambing, cocok untuk 4 orang, termasuk nasi timbel.</p>
+                <p class="fw-bold mt-auto">Rp 140.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Paket Keluarga (4 Porsi)"
+                        data-menu-price="Rp 140.000"
+                        data-menu-desc="Paket hemat berisi campuran sate sapi & kambing untuk 4 orang, sudah termasuk nasi timbel dan sambal tomat.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 menu-card" data-category="sapi">
+            <div class="card h-100">
+              <img src="https://resepkoki.id/wp-content/uploads/2017/07/Resep-Sate-Maranggi.jpg" class="card-img-top" alt="Sate Maranggi Sapi Plus Nasi Timbel">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Sate Sapi + Nasi Timbel</h5>
+                <p class="card-text">10 tusuk sate sapi dengan nasi timbel hangat dan lalapan.</p>
+                <p class="fw-bold mt-auto">Rp 42.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Sate Sapi + Nasi Timbel"
+                        data-menu-price="Rp 42.000"
+                        data-menu-desc="10 tusuk sate sapi disajikan lengkap dengan nasi timbel hangat, lalapan, dan sambal tomat khas.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 menu-card" data-category="kambing">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/67/ee/b4/67eeb4db52393260a5bd601a0c3e16d3.jpg" class="card-img-top" alt="Sate Maranggi Kambing Plus Nasi Timbel">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Sate Kambing + Nasi Timbel</h5>
+                <p class="card-text">10 tusuk sate kambing dengan nasi timbel hangat dan lalapan.</p>
+                <p class="fw-bold mt-auto">Rp 47.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Sate Kambing + Nasi Timbel"
+                        data-menu-price="Rp 47.000"
+                        data-menu-desc="10 tusuk sate kambing disajikan lengkap dengan nasi timbel hangat, lalapan, dan sambal tomat khas.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 menu-card" data-category="paket">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/1200x/70/6b/ce/706bceda7dd0b24324a8ac6b372c706e.jpg" class="card-img-top" alt="Paket Acara Sate Maranggi">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Paket Acara (10 Porsi)</h5>
+                <p class="card-text">Untuk acara keluarga atau kantor, bisa custom komposisi sapi/kambing.</p>
+                <p class="fw-bold mt-auto">Rp 330.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Paket Acara (10 Porsi)"
+                        data-menu-price="Rp 330.000"
+                        data-menu-desc="Cocok untuk acara keluarga atau kantor, isi 10 porsi dengan komposisi sapi/kambing yang bisa disesuaikan permintaan.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 menu-card" data-category="minuman">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/63/30/04/633004a76c6f03ab9665d8cce7dade47.jpg" class="card-img-top" alt="Minuman">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Es Teh Manis</h5>
+                <p class="card-text">Teh manis dingin dengan rasa yang pas, memberikan kesegaran di setiap tegukan.</p>
+                <p class="fw-bold mt-auto">Rp 10.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Es Teh Manis"
+                        data-menu-price="Rp 10.000"
+                        data-menu-desc="Teh manis dingin dengan rasa yang pas, memberikan kesegaran di setiap tegukan.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 menu-card" data-category="minuman">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/9d/77/0e/9d770e51ea037749a701694c1db95874.jpg" class="card-img-top" alt="Minuman">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Teh Manis Hangat</h5>
+                <p class="card-text">Seduhan teh hangat yang harum dengan sentuhan manis yang menenangkan.</p>
+                <p class="fw-bold mt-auto">Rp 10.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Teh Manis Hangat"
+                        data-menu-price="Rp 10.000"
+                        data-menu-desc="Seduhan teh hangat yang harum dengan sentuhan manis yang menenangkan.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 menu-card" data-category="minuman">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/1200x/3e/02/91/3e0291b06aedf898ca51b02bdaa7465d.jpg" class="card-img-top" alt="Minuman">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Air Mineral</h5>
+                <p class="card-text">Air mineral berkualitas yang menyegarkan dan menjadi pendamping sempurna untuk setiap hidangan.</p>
+                <p class="fw-bold mt-auto">Rp 5.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Air Mineral"
+                        data-menu-price="Rp 5.000"
+                        data-menu-desc="Air mineral berkualitas yang menyegarkan dan menjadi pendamping sempurna untuk setiap hidangan.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 menu-card" data-category="minuman">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/1200x/43/3d/28/433d28c07a9b05f671d3710a90804934.jpg" class="card-img-top" alt="Minuman">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Es Kelapa</h5>
+                <p class="card-text">Kesegaran air kelapa alami dengan daging kelapa muda yang lembut, cocok untuk melengkapi santapan sate maranggi.</p>
+                <p class="fw-bold mt-auto">Rp 10.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Es Kelapa"
+                        data-menu-price="Rp 10.000"
+                        data-menu-desc="Kesegaran air kelapa alami dengan daging kelapa muda yang lembut, cocok untuk melengkapi santapan sate maranggi.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 menu-card" data-category="minuman">
+            <div class="card h-100">
+              <img src="https://i.pinimg.com/736x/f8/56/5b/f8565b7442a9df396adc387c8555d8b4.jpg" class="card-img-top" alt="Minuman">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Jus Jeruk</h5>
+                <p class="card-text">Dibuat dari jeruk segar pilihan, menghadirkan perpaduan rasa manis dan asam yang alami.</p>
+                <p class="fw-bold mt-auto">Rp 10.000</p>
+                <button type="button" class="btn btn-outline-primary"
+                        data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-menu-name="Jus Jeruk"
+                        data-menu-price="Rp 10.000"
+                        data-menu-desc="Dibuat dari jeruk segar pilihan, menghadirkan perpaduan rasa manis dan asam yang alami.">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalMenuName"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p id="modalMenuDesc"></p>
+            <p class="fw-bold" id="modalMenuPrice"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ 5. TESTIMONI PELANGGAN ============ -->
+    <section id="testimoni" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Testimoni Pelanggan</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 testimoni-card">
+              <div class="card-body">
+                <p class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+                <p class="card-text">"Bumbunya meresap sampai ke dalam, beda dari sate maranggi tempat lain yang pernah saya coba."</p>
+                <p class="fw-bold mb-0">— Dedi Kurniawan</p>
+                <small class="text-muted">Pelanggan sejak 2020</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 testimoni-card">
+              <div class="card-body">
+                <p class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+                <p class="card-text">"Paket keluarganya pas untuk acara arisan, semua tamu puas dengan rasanya."</p>
+                <p class="fw-bold mb-0">— Sri Wahyuni</p>
+                <small class="text-muted">Pelanggan sejak 2022</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 testimoni-card">
+              <div class="card-body">
+                <p class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+                <p class="card-text">"Sambal tomatnya juara, sate kambingnya juga tidak prengus sama sekali."</p>
+                <p class="fw-bold mb-0">— Ahmad Fauzi</p>
+                <small class="text-muted">Pelanggan sejak 2023</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 testimoni-card">
+              <div class="card-body">
+                <p class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+                <p class="card-text">"Not bad, but could be better."</p>
+                <p class="fw-bold mb-0">— Keisya</p>
+                <small class="text-muted">Pelanggan sejak 2024</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 testimoni-card">
+              <div class="card-body">
+                <p class="text-warning mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+                <p class="card-text">"Tempatnya sangat nyaman dan pelayanannya ramah."</p>
+                <p class="fw-bold mb-0">— Andi Prasetyo</p>
+                <small class="text-muted">Pelanggan sejak 2021</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. KONTAK & LOKASI ============ -->
+    <section id="kontak" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Kontak &amp; Lokasi</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="ratio ratio-16x9 map-embed">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.999999999!2d107.4433!3d-6.5569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPurwakarta!5e0!3m2!1sid!2sid!4v1234567890"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="Lokasi Maranggi Nusantara di Purwakarta"></iframe>
+            </div>
+            <p class="mt-2 text-muted">
+              <i class="bi bi-geo-alt-fill"></i>
+              Jl. Raya Purwakarta No. 123, Purwakarta, Jawa Barat
+            </p>
+          </div>
+          <div class="col-md-6">
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="namaInput" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="namaInput" name="nama">
+                <div class="invalid-feedback" id="namaError"></div>
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInput" name="email">
+                <div class="invalid-feedback" id="emailError"></div>
+              </div>
+              <div class="mb-3">
+                <label for="pesanInput" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesanInput" name="pesan" rows="4"></textarea>
+                <div class="invalid-feedback" id="pesanError"></div>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+              <div id="formSuccessMsg" class="alert alert-success mt-3 d-none">
+                Pesan berhasil dikirim!
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-4">
+    <div class="container">
+      <p class="mb-1">
+        <i class="bi bi-geo-alt-fill"></i> Jl. Raya Purwakarta No. 123, Purwakarta, Jawa Barat
+      </p>
+      <p class="mb-2">
+        <a href="#" class="text-decoration-none me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-decoration-none me-3"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="text-decoration-none"><i class="bi bi-facebook"></i></a>
+      </p>
+      <p class="mb-0">&copy; 2026 Maranggi Nusantara. Semua hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle JS (termasuk Popper), WAJIB sebelum script.js kita -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
