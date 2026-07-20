@@ -114,6 +114,23 @@ a { color: var(--color-primary); }
   box-shadow: 0 10px 20px rgba(74,44,29,.15);
 }
 
+#heroCarousel .carousel-item img {
+  height: 100vh;
+  min-height: 380px;
+  object-fit: cover;
+  filter: brightness(.55);
+}
+
+#heroCarousel .carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+#heroCarousel .carousel-caption h1,
+#heroCarousel .carousel-caption p {
+  color: var(--color-white);
+  text-shadow: 0 2px 6px rgba(0,0,0,.5);
+}
 
 
 /* ---------------- GALERI FOTO — CSS GRID MURNI ---------------- */
