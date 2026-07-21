@@ -18,6 +18,14 @@
   --transition-base: 0.3s ease;
 }
 
+body.dark-mode {
+  --color-cream: #2B2118;
+  --color-cream-dark: #201811;
+  --color-white: #3A2C1F;
+  --color-brown-dark: #F2DFC5;
+  --color-brown: #D8B48C;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -65,6 +73,68 @@ a { color: var(--color-primary); }
 
 #mainNavbar .nav-link:hover {
   color: var(--color-primary);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+}
+
+.btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.menu-card .card {
+  border: none;
+  border-radius: var(--radius-base);
+  overflow: hidden;
+  background-color: var(--color-white);
+  transition: transform var(--transition-base),
+              box-shadow var(--transition-base);
+}
+
+.menu-card .card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.menu-card .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(74,44,29,.15);
+}
+
+#heroCarousel .carousel-item img {
+  height: 100vh;
+  min-height: 380px;
+  object-fit: cover;
+  filter: brightness(.55);
+}
+
+#heroCarousel .carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+#heroCarousel .carousel-caption h1,
+#heroCarousel .carousel-caption p {
+  color: var(--color-white);
+  text-shadow: 0 2px 6px rgba(0,0,0,.5);
+}
+
+#contactForm .form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 .2rem rgba(74,44,29,.25);
 }
 
 /* ---------------- GALERI FOTO — CSS GRID MURNI ---------------- */
